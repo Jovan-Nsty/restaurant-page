@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-body-color: #161616;
+    --secondary-body-color: #ff9e00;
+}
+
+body {
+    background-color: black;
+}
+
+header > nav {
+    background-color: var(--main-body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 80px;
+    border-bottom: 1px solid var(--secondary-body-color);
+}
+
+.nav-btn {
+    color: var(--secondary-body-color);
+    background-color: var(--main-body-color);
+    border: none;
+    font-size: medium;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    color: #fff;
+}
