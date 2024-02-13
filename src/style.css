@@ -9,6 +9,11 @@
     --secondary-body-color: #ff9e00;
 }
 
+html,
+body {
+  height: 100vh;
+}
+
 body {
     background-color: black;
 }
@@ -27,10 +32,42 @@ header > nav {
     color: var(--secondary-body-color);
     background-color: var(--main-body-color);
     border: none;
-    font-size: medium;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .nav-btn:hover {
     cursor: pointer;
+    color: #ffbd00;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-color: var(--main-body-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 500px;
+    max-width: 800px;
     color: #fff;
+    border: 1px solid var(--secondary-body-color);
+    gap: 15px;
+    padding: 50px;
+    font-size: large;
+    margin-top: 45px;
+}
+
+#home > p:nth-last-child(-n + 2) {
+    color: var(--secondary-body-color);
+    font-weight: bolder;
+}
+
+h1 {
+    color: var(--secondary-body-color);
 }
