@@ -18,7 +18,7 @@ body {
     background-color: black;
 }
 
-header > nav {
+header {
     background-color: var(--main-body-color);
     display: flex;
     justify-content: center;
@@ -26,6 +26,15 @@ header > nav {
     gap: 15px;
     height: 80px;
     border-bottom: 1px solid var(--secondary-body-color);
+}
+
+#header-svg img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
 }
 
 .nav-btn {

@@ -1,6 +1,13 @@
 import { updateHome } from './home.js';
 import { updateAbout } from './about.js';
 import { updateMenu } from './menu.js'
+import Icon from './honey.svg';
+
+const headerSvg = document.getElementById('header-svg');
+
+const myIcon = new Image();
+myIcon.src = Icon;
+headerSvg.appendChild(myIcon);
 
 const content = document.getElementById('content');
 content.textContent = '';
