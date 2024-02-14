@@ -68,6 +68,6 @@ header > nav {
     font-weight: bolder;
 }
 
-h1 {
+h1, h2, h3, .product-price {
     color: var(--secondary-body-color);
 }

@@ -1,23 +1,26 @@
-import { paraArray } from './para.js';
+import { updateHome } from './home.js';
+import { updateAbout } from './about.js';
+import { updateMenu } from './menu.js'
 
 const content = document.getElementById('content');
+content.textContent = '';
+content.appendChild(updateHome());
 
-function updateDOM() {
-    const homeDiv = document.createElement('div');
-    homeDiv.setAttribute('id', 'home');
+const homeBtn = document.getElementById('home-btn');
+const menuBtn = document.getElementById('menu-btn');
+const aboutBtn = document.getElementById('about-btn');
 
-    const header = document.createElement('h1');
-    header.textContent = 'Golden Hive Delights';
+homeBtn.addEventListener('click', () => {
+    content.textContent = '';
+    content.appendChild(updateHome());
+});
 
-    homeDiv.appendChild(header);
+menuBtn.addEventListener('click', () => {
+    content.textContent = '';
+    content.appendChild(updateMenu());
+});
 
-    for(let i = 0; i < paraArray.length; i++) {
-        const paragraph = document.createElement('p');
-        paragraph.textContent = paraArray[i];
-        homeDiv.appendChild(paragraph);
-    }
-    
-    return homeDiv;
-}
-
-content.appendChild(updateDOM());
+aboutBtn.addEventListener('click', () => {
+    content.textContent = '';
+    content.appendChild(updateAbout());
+});
