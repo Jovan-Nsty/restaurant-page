@@ -1,4 +1,4 @@
-# restaurant-page
+# Restaurant page
 
 ## Description
 * A simple Restaurant browser page.
